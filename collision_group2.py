@@ -11,8 +11,6 @@
 # - Prashant Sharma</br>
 
 # In[270]:
-
-
 # Initial imports
 import numpy as np
 import pandas as pd
@@ -34,10 +32,7 @@ import matplotlib.pyplot as plt
 # get_ipython().run_line_magic('matplotlib', 'inline')
 import seaborn as sns
 import os
-
 # In[271]:
-
-
 # Helper Function to plot confusion Matrix
 def plot_confusion_matrix(confusion_matrix, y_limit: list, model:str, color_map: str):
     #Plot the confusion Matrix
@@ -53,12 +48,9 @@ def plot_confusion_matrix(confusion_matrix, y_limit: list, model:str, color_map:
     plt.ylabel('Actual label', fontsize='large')
     plt.xlabel('Predicted label', fontsize='large')
     plt.tight_layout()
-
 # In[272]:
 # Load the KSi Dataset
 df_ksi = pd.read_csv('KSI.csv')
-
-
 # In[273]:
 # Display all the columns
 pd.set_option('display.max_columns', None)
